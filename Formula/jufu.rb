@@ -1,19 +1,19 @@
 class Jufu < Formula
   desc "Jujutsu log viewer TUI inspired by keifu"
   homepage "https://github.com/hkrhd/jufu"
-  version "0.1.4"
+  version "0.1.5"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/hkrhd/jufu/releases/download/v0.1.4/jufu-aarch64-apple-darwin.tar.xz"
-    sha256 "a402390c45d77dc1280b8ff98029a5bd03c6db3fc52a53281ea3af840cca03f9"
+    url "https://github.com/hkrhd/jufu/releases/download/v0.1.5/jufu-aarch64-apple-darwin.tar.xz"
+    sha256 "375af0c9bfe7edff2458d668f9b04e4e74e3469de70892fd05c730b86f648253"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hkrhd/jufu/releases/download/v0.1.4/jufu-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "60ce3a87f35816b62ef3efb275455fbe9628bad1452142cbaf7373740d1cd427"
+      url "https://github.com/hkrhd/jufu/releases/download/v0.1.5/jufu-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "935ea31aba4b86571da0eedafb50502d05c66cf350c07cde324be224de7f76cf"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hkrhd/jufu/releases/download/v0.1.4/jufu-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "56452d90d7834b86886d46a0009f36d9137d47785931707556179a5e961baa91"
+      url "https://github.com/hkrhd/jufu/releases/download/v0.1.5/jufu-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7e9c6d47647d2736170db04389d910b0e5d9b5d957a1dbbf01226ef6daca0c3e"
     end
   end
   license "MIT"
